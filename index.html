@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Suyeon</title>
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2021/01/25/22/45/leaves-5949884_960_720.png');
+            background-size: cover;
+        }
+        body {
+            height: 100vh;
+            background-image: url('1626184528965-12.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .cuty
+        {
+            margin-left: 20px;
+            font-style: italic;
+        }
+        .pretty
+        {
+            margin-left: 20px;
+        }
+        
+        .box {
+            width: 150px;
+            height: 150px; 
+            border-radius: 70%;
+            overflow: hidden;
+            margin-left: 193px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .beautiful {
+            margin-left: 15px;
+        }
+        .tired {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kang Su Yeon</h1>
+    <div class="cuty">
+        <p>
+            <strong>My Name 강수연이다.</strong>
+            <br/><strong>웹디자이너 지망생이다.</strong>
+            <br/><strong>HTML, CSS, Java Script를 열심히 공부할 것이다.</strong></p>
+    </div>
+
+    <div class="pretty">
+        <p><strong>취미</strong> : 그림 그리기, 뜨개질 하기, 화장 하기, 화장품 구경하기, 데코 하기</p>
+    </div>
+    
+    <div class="box">
+        <img src="suyeon.jpg" alt="수연이 페이스" style="width: 150px;">
+    </div>
+
+    <div class="beautiful">
+        <input type="text" id="text" style="width: 500px; height: 100px; font-size: 50px;"><label class="la-01">&nbsp;&nbsp;&nbsp;<button onclick="Okay_Good();">입력</button><strong>&nbsp;&nbsp;&nbsp;본인 소개를 한 문장으로!</strong></label>
+    </div>
+
+    <div class="tired">
+        <h4>요즘 수연이 상태 : 겁나리 피곤한 삶을 삶. 힘듬.</h4>
+    </div>
+        
+    
+</body>
+<script>
+    function Okay_Good() {
+        var textbox = document.getElementById("text");
+        if(textbox != null)
+        {
+            alert(textbox.value);
+        }
+        else if(textbox.value == "") {
+            alert("error");
+        }
+    }
+</script>
+</html>

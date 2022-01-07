@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body
+    {
+        background-color: bisque;
+        text-align: center;
+        margin-top: auto;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>alert 창 띄우기</h1>
+    <h3>츄잉껌 선택</h3>
+    <form name="link_form">
+        <select name="link" id="candy">
+            <option>구매하고 싶은 캔디를 고르세요.</option>
+            <option value="https://search.shopping.naver.com/catalog/29581702634?cat_id=50001765&frm=NVSCPRO&query=%EB%A7%88%EC%9D%B4%EC%AE%B8&NaPm=ct%3Dkx4fl4u8%7Cci%3Dde5d01bf56d9377dcdc90106df1f9c9d8018d8de%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D3c636b8d0560a2421ad2c846e80c35bdefae113c">마이쮸</option>
+            <option value="https://smartstore.naver.com/scs030610/products/5917503701?NaPm=ct%3Dkx44ah6g%7Cci%3D0zq0000pJFnv-0MPb1kl%7Ctr%3Dpla%7Chk%3D27a1f01bdf1d34bd7c0b21c429953ad179e1edcf">새콤달콤</option>
+            <option value="https://smartstore.naver.com/j2/products/2511778237?NaPm=ct%3Dkx4flpo8%7Cci%3Df17c62734ca0e9a33c3dffeb29d98c05078d384b%7Ctr%3Dsls%7Csn%3D170995%7Chk%3Dd484d4053105203b7a6f4b4cc0080ab938b9e7da">하이츄</option>
+        </select>
+        <button type="button" onclick="choice1();return false;">선택</button>
+    </form>
+</body>
+<script type="text/javascript">
+    function choice1()
+    {
+        var i = document.link_form;
+        var j = document.getElementById("candy");
+        var jIndex = document.getElementById("candy").options.selectedIndex;
+        if(j.options[jIndex].value == '구매하고 싶은 캔디를 고르세요.')
+        {
+            alert('값을 선택해주세요.');
+            return false;
+        }
+        else if(i.link.value != "")
+        {
+            window.open(i.link.value);
+        }
+    }
+</script>
+
+</html>
